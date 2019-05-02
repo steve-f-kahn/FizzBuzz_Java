@@ -3,6 +3,8 @@ package Fizzbuzz;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.beans.Transient;
+
 import org.junit.Test;
 
 /**
@@ -26,10 +28,17 @@ public class AppTest
         assertEquals("2", app.fizzbuzz(2));
     }
 
-    @Test 
+    @Test
     public void fizzbuzzShouldReturnFizzGiven3()
     {
         App app = new App();
-        assertEquals("Fizz", app.fizzbuzz(2));
+        assertEquals("Fizz", app.fizzbuzz(3));
+    }
+
+    @Test
+    public void fizzbuzzShouldReturnBuzzGiven5()
+    {
+        App app = new App();
+        assertEquals("Buzz", app.fizzbuzz(5));
     }
 }

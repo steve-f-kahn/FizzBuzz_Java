@@ -15,7 +15,10 @@ public class App
     {
         if (args == 3) {
             return "Fizz";
+        } else if (args == 5) {
+            return "Buzz";
+        } else {
+            return String.format("%s", args);
         }
-        return String.format("%s", args);
     }
 }
