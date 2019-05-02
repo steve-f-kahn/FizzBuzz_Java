@@ -13,7 +13,9 @@ public class App
 
     public String fizzbuzz( Integer args )
     {
-        if (args == 3) {
+        if (args == 15){
+            return "FizzBuzz";
+        } else if (args % 3 == 0) {
             return "Fizz";
         } else if (args == 5) {
             return "Buzz";
