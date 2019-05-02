@@ -55,4 +55,11 @@ public class AppTest
         App app = new App();
         assertEquals("Fizz", app.fizzbuzz(6));
     }
+
+    @Test
+    public void fizzbuzzShouldReturnBuzzGiven10()
+    {
+        App app = new App();
+        assertEquals("Buzz", app.fizzbuzz(10));
+    }
 }
